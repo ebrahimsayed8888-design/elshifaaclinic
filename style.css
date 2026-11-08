@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #e91e63; /* Deep Pink */
+    --accent-color: #ff80ab;  /* Soft Bright Pink */
+    --secondary-color: #fce4ec; /* Pastel Rose Tint */
+    --bg-color: #fff5f8;      /* Warm White-Pink Background */
+    --text-color: #37474f;    /* Elegant Dark Slate */
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(233, 30, 99, 0.05);
+    --border-radius: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    direction: ltr;
+}
+
+/* Chic Header Layout */
+.clinic-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--white);
+    padding: 4rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(233, 30, 99, 0.15);
+}
+
+.header-logo {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    animation: pulse 2s infinite;
+}
+
+.clinic-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+/* Main Container */
+.container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.card, .form-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 3rem;
+    border: 1px solid rgba(233, 30, 99, 0.05);
+}
+
+.form-card {
+    border: 2px dashed var(--accent-color);
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.section-desc, .form-subtitle {
+    text-align: center;
+    color: #78909c;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Luxury Image Grid Gallery */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.gallery-item {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid #fce4ec;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(233, 30, 99, 0.1);
+}
+
+.responsive-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.gallery-item h3 {
+    color: var(--primary-color);
+    padding: 12px 16px 4px;
+    font-size: 1.2rem;
+}
+
+.gallery-item p {
+    color: #607d8b;
+    padding: 0 16px 16px;
+    font-size: 0.95rem;
+}
+
+/* Elegant Table Design */
+.table-container {
+    overflow-x: auto;
+    margin-top: 1.5rem;
+}
+
+.doctors-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.doctors-table th, .doctors-table td {
+    padding: 16px;
+    border-bottom: 1px solid #f8bbd0;
+}
+
+.doctors-table th {
+    background-color: var(--secondary-color);
+    color: #880e4f;
+    font-weight: 600;
+}
+
+.doctors-table tr:hover {
+    background-color: #fff8fa;
+}
+
+/* Form Design Elements */
+.form-legend {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 6px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #455a64;
+    font-size: 0.95rem;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fffeff;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(233, 30, 99, 0.12);
+}
+
+/* Stylish Luxury Submit Button */
+.submit-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--white);
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    margin-top: 1.5rem;
+}
+
+.submit-btn:hover {
+    opacity: 0.95;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(233, 30, 99, 0.4);
+}
+
+.clinic-footer {
+    background-color: #263238;
+    color: #b0bec5;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-top: 6rem;
+    font-size: 0.9rem;
+    border-top: 4px solid var(--primary-color);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
